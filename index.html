@@ -1,53 +1,81 @@
 <!DOCTYPE html>
 <html lang="ru">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.7.0/nouislider.min.css">
-		<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplebar/5.3.6/simplebar.min.css">
-		<link rel="stylesheet" href="css/main.min.css">
-		<title>MarkelSneak</title>
-	</head>
-	<body>
-		<div class="wrapper">
-			<header class="header fix-block">
-	<div class="header__container _container">
-		<div class="header__container-grid">
-			<div class="icon-menu"> <!-- Бургер -->
-				<span></span>
-				<span></span>
-				<span></span>
-			</div>
-			<div class="header__left">
-				<a class="header__logo">MarkelSneak</a>
-			</div>
-			<div class="header__right" data-da="header__container-grid,1024,last">
-				<nav class="header__nav">
-					<ul class="header__list">
-						<li><a href="" class="header__link" data-catalog>Каталог</a></li>
-						<li><a href="" class="header__link" data-about>О нас</a></li>
-						<li><a href="" class="header__link" data-quiz>Подбор товара</a></li>
-						<li><a href="" class="header__link" data-team>Наша команда</a></li>
-						<li><a href="" class="header__link" data-faq>Доставка и оплата</a></li>
-						<li><a href="" class="header__link" data-contacts>Контакты</a></li>
-					</ul>
-				</nav>
-				<div class="header__cart cart-header">
-					<button class="btn-reset cart-header__btn">
-						<svg>
-							<use xlink:href="img/sprite.svg#cart"></use>
-						</svg>
-						<div class="cart-header__btn-count">1</div>
-					</button>
-					<div class="cart-header__wrapper" data-da="header__container-grid,510,last">
-						<div class="cart-header__window window-cart">
-							<div class="window-cart__top top-cart" data-simplebar>
-								<ul class="top-cart__list">
-									<!-- <li class="cart-product__item">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.7.0/nouislider.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/simplebar/5.3.6/simplebar.min.css"
+    />
+    <link rel="stylesheet" href="css/main.min.css" />
+    <title>MarkelSneak</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header fix-block">
+        <div class="header__container _container">
+          <div class="header__container-grid">
+            <div class="icon-menu">
+              <!-- Бургер -->
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="header__left">
+              <a class="header__logo">MarkelSneak</a>
+            </div>
+            <div
+              class="header__right"
+              data-da="header__container-grid,1024,last"
+            >
+              <nav class="header__nav">
+                <ul class="header__list">
+                  <li>
+                    <a href="" class="header__link" data-catalog>Каталог</a>
+                  </li>
+                  <li><a href="" class="header__link" data-about>О нас</a></li>
+                  <li>
+                    <a href="" class="header__link" data-quiz>Подбор товара</a>
+                  </li>
+                  <li>
+                    <a href="" class="header__link" data-team>Наша команда</a>
+                  </li>
+                  <li>
+                    <a href="" class="header__link" data-faq
+                      >Доставка и оплата</a
+                    >
+                  </li>
+                  <li>
+                    <a href="" class="header__link" data-contacts>Контакты</a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="header__cart cart-header">
+                <button class="btn-reset cart-header__btn">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#cart"></use>
+                  </svg>
+                  <div class="cart-header__btn-count">1</div>
+                </button>
+                <div
+                  class="cart-header__wrapper"
+                  data-da="header__container-grid,510,last"
+                >
+                  <div class="cart-header__window window-cart">
+                    <div class="window-cart__top top-cart" data-simplebar>
+                      <ul class="top-cart__list">
+                        <!-- <li class="cart-product__item">
 										<article class="cart-product">
 											<div class="cart-product__img">
-												<img src="../img/image01.jpg" alt="">
+												<img src="img/image01.jpg" alt="">
 											</div>
 											<div class="cart-product__wrapper">
 												<h3 class="cart-product__title">Женские кроссовки Puma Force 1 Shadow</h3>
@@ -63,7 +91,7 @@
 									<li class="cart-product__item">
 										<article class="cart-product">
 											<div class="cart-product__img">
-												<img src="../img/image01.jpg" alt="">
+												<img src="img/image01.jpg" alt="">
 											</div>
 											<div class="cart-product__wrapper">
 												<h3 class="cart-product__title">Женские кроссовки Puma Force 1 Shadow</h3>
@@ -79,7 +107,7 @@
 									<li class="cart-product__item">
 										<article class="cart-product">
 											<div class="cart-product__img">
-												<img src="../img/image01.jpg" alt="">
+												<img src="img/image01.jpg" alt="">
 											</div>
 											<div class="cart-product__wrapper">
 												<h3 class="cart-product__title">Женские кроссовки Puma Force 1 Shadow</h3>
@@ -95,7 +123,7 @@
 									<li class="cart-product__item">
 										<article class="cart-product">
 											<div class="cart-product__img">
-												<img src="../img/image01.jpg" alt="">
+												<img src="img/image01.jpg" alt="">
 											</div>
 											<div class="cart-product__wrapper">
 												<h3 class="cart-product__title">Женские кроссовки Puma Force 1 Shadow</h3>
@@ -111,7 +139,7 @@
 									<li class="cart-product__item">
 										<article class="cart-product">
 											<div class="cart-product__img">
-												<img src="../img/image01.jpg" alt="">
+												<img src="img/image01.jpg" alt="">
 											</div>
 											<div class="cart-product__wrapper">
 												<h3 class="cart-product__title">Женские кроссовки Puma Force 1 Shadow</h3>
@@ -127,7 +155,7 @@
 									<li class="cart-product__item">
 										<article class="cart-product">
 											<div class="cart-product__img">
-												<img src="../img/image01.jpg" alt="">
+												<img src="img/image01.jpg" alt="">
 											</div>
 											<div class="cart-product__wrapper">
 												<h3 class="cart-product__title">Женские кроссовки Puma Force 1 Shadow</h3>
@@ -143,7 +171,7 @@
 									<li class="cart-product__item">
 										<article class="cart-product">
 											<div class="cart-product__img">
-												<img src="../img/image01.jpg" alt="">
+												<img src="img/image01.jpg" alt="">
 											</div>
 											<div class="cart-product__wrapper">
 												<h3 class="cart-product__title">Женские кроссовки Puma Force 1 Shadow</h3>
@@ -156,529 +184,665 @@
 											</button>
 										</article>
 									</li> -->
-								</ul>
-							</div>
-							<div class="window-cart__bottom bottom-cart">
-							<!-- <div class="bottom-cart__final-price">
+                      </ul>
+                    </div>
+                    <div class="window-cart__bottom bottom-cart">
+                      <!-- <div class="bottom-cart__final-price">
 									<span class="bottom-cart__text">Итого:</span>
 									<span class="bottom-cart__price">0 ₽</span>
 								</div>
 								<button class="btn-reset bottom-cart__btn btn" data-path="cart-modal">Перейти к оформлению</button> -->
-								<h3 class="bottom-cart__empty">В корзине нет товаров</h3>
-								<svg>
-									<use xlink:href="img/sprite.svg#sad"></use>
-								</svg>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</header>
-			<main class="main">
-				<section class="hero">
-	<span class="hero__bg-text" aria-hidden="true">MarkelSneak</span> <!-- screen reader не увидит текст -->
-	<div class="hero__container _container">
-		<h1 class="hero__title">
-			Кроссовки известных брендов 
-			с&nbsp;доставкой по&nbsp;России и&nbsp;СНГ
-		</h1>
-		<p class="hero__descr">
-			Мы продаем кроссовки брендов Nike, Adidas, Puma, Reebok, Converse и многие другие по низким ценам
-		</p>
-		<button class="btn-reset hero__btn btn">Перейти к покупкам</button>
-	</div>
-</section>
-				<section class="catalog">
-	<div class="catalog__container _container">
-		<h1 class="catalog__title _title">Каталог</h1>
-		<div class="catalog__grid">
-			<div class="catalog__left left-catalog">
-				<h2 class="left-catalog__subtitle">Подбор по&nbsp;параметрам</h2>
-				<div class="left-catalog__prop prop-catalog">
-					<strong class="prop-catalog__name">Цена, руб</strong>
-					<div class="prop-catalog__inner price-catalog">
-						<input type="text" class="price-catalog__value" id="price-start">
-						<span></span>
-						<input type="text" class="price-catalog__value" id="price-end">
-						<div class="price-catalog__element" id="slider"></div>
-					</div>
-				</div>
-				<div class="left-catalog__prop prop-catalog">
-					<strong class="prop-catalog__name">Пол</strong>
-					<div class="prop-catalog__inner checkbox-catalog">
-						<label class="checkbox-catalog__label">
-							<input class="checkbox" type="checkbox">
-							<span class="checkbox-catalog__text checkbox__text">мужской</span>
-						</label>
-						<label class="checkbox-catalog__label">
-							<input class="checkbox" type="checkbox">
-							<span class="checkbox-catalog__text checkbox__text">женский</span>
-						</label>
-					</div>
-				</div>
-				<div class="left-catalog__prop prop-catalog">
-					<strong class="prop-catalog__name">Размер</strong>
-					<div class="prop-catalog__inner tabel-catalog">
-						<table>
-							<caption>Таблица размеров</caption><!-- для скринридера -->
-							<tr>
-								<td>35</td>
-								<td>36</td>
-								<td>37</td>
-							</tr>
-							<tr>
-								<td>38</td>
-								<td>39</td>
-								<td>40</td>
-							</tr>
-							<tr>
-								<td>41</td>
-								<td>42</td>
-								<td>43</td>
-							</tr>
-						</table>
-					</div>
-				</div>
-				<div class="left-catalog__prop prop-btn">
-					<button class="btn-reset prop-btn__apply btn">Применить</button>
-					<button class="btn-reset prop-btn__reset">сбросить</button>
-				</div>
-			</div>
-			<div class="catalog__content content-catalog">
-				<ul class="content-catalog__list">
-					<li class="content-catalog__item">
-						<article class="product">
-							<div class="product__image">
-								<img src="../img/image01.jpg" alt="img1">
-								<div class="product__btns">
-									<button class="btn-reset product__button" aria-label="Показать информацию о товаре">
-										<svg>
-											<use xlink:href="img/sprite.svg#view"></use>
-										</svg>
-									</button>
-									<button class="btn-reset product__button" aria-label="Добавить товар в корзину">
-										<svg>
-											<use xlink:href="img/sprite.svg#catalog-cart"></use>
-										</svg>
-									</button>
-								</div>
-							</div>
-							<h3 class="product__title">Кроссовки Nike Air Force 1 '07 QS</h3>
-							<span class="product__price">11 000 р</span>
-						</article>
-					</li>
-				</ul>
-				<button class="btn-reset content-catalog__btn btn">Показать еще</button>
-			</div>
-		</div>
-	</div>
-</section>
-				<section class="about">
-	<span class="about__bg-circle"></span> <!-- красная точка -->
-	<div class="about__container _container">
-		<div class="about__text">
-			<h2 class="about__title">Пара слов о нас</h2>
-			<p>
-				<q>
-					Спорт держит нас в&nbsp;форме. Учит дисциплине. Объединяет нас. Через спорт мы&nbsp;можем менять жизни. В&nbsp;том числе с&nbsp;помощью воодушевляющих историй спортсменов. Чтобы помочь тебе подняться и&nbsp;двигаться вперед.
-				</q>
-				<cite>MarkelSneak</cite>
-			</p>
-		</div>
-		<div class="about__img">
-			<img src="../img/about-image.jpg" alt="" aria-hidden="true">
-		</div>
-	</div>
-</section>
-				<section class="quiz">
-	<div class="quiz__container _container">
-		<div class="quiz__content">
-			<h2 class="visually-hidden">Подбор товара - квиз</h2><!-- для SEO -->
-			<h3 class="quiz__title _title">Мы подберем идеальную пару для вас</h3>
-			<p class="quiz__descr">Ответьте на три вопроса и мы вышлем каталог с самыми подходящими для вас моделями</p>
-			<form class="quiz-form" method="POST">
-				<div class="quiz-form__content"></div>
-				<!-- <div class="quiz-form__collection collection-quiz">
+                      <h3 class="bottom-cart__empty">В корзине нет товаров</h3>
+                      <svg>
+                        <use xlink:href="img/sprite.svg#sad"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <section class="hero">
+          <span class="hero__bg-text" aria-hidden="true">MarkelSneak</span>
+          <!-- screen reader не увидит текст -->
+          <div class="hero__container _container">
+            <h1 class="hero__title">
+              Кроссовки известных брендов с&nbsp;доставкой по&nbsp;России
+              и&nbsp;СНГ
+            </h1>
+            <p class="hero__descr">
+              Мы продаем кроссовки брендов Nike, Adidas, Puma, Reebok, Converse
+              и многие другие по низким ценам
+            </p>
+            <button class="btn-reset hero__btn btn">Перейти к покупкам</button>
+          </div>
+        </section>
+        <section class="catalog">
+          <div class="catalog__container _container">
+            <h1 class="catalog__title _title">Каталог</h1>
+            <div class="catalog__grid">
+              <div class="catalog__left left-catalog">
+                <h2 class="left-catalog__subtitle">
+                  Подбор по&nbsp;параметрам
+                </h2>
+                <div class="left-catalog__prop prop-catalog">
+                  <strong class="prop-catalog__name">Цена, руб</strong>
+                  <div class="prop-catalog__inner price-catalog">
+                    <input
+                      type="text"
+                      class="price-catalog__value"
+                      id="price-start"
+                    />
+                    <span></span>
+                    <input
+                      type="text"
+                      class="price-catalog__value"
+                      id="price-end"
+                    />
+                    <div class="price-catalog__element" id="slider"></div>
+                  </div>
+                </div>
+                <div class="left-catalog__prop prop-catalog">
+                  <strong class="prop-catalog__name">Пол</strong>
+                  <div class="prop-catalog__inner checkbox-catalog">
+                    <label class="checkbox-catalog__label">
+                      <input class="checkbox" type="checkbox" />
+                      <span class="checkbox-catalog__text checkbox__text"
+                        >мужской</span
+                      >
+                    </label>
+                    <label class="checkbox-catalog__label">
+                      <input class="checkbox" type="checkbox" />
+                      <span class="checkbox-catalog__text checkbox__text"
+                        >женский</span
+                      >
+                    </label>
+                  </div>
+                </div>
+                <div class="left-catalog__prop prop-catalog">
+                  <strong class="prop-catalog__name">Размер</strong>
+                  <div class="prop-catalog__inner tabel-catalog">
+                    <table>
+                      <caption>
+                        Таблица размеров
+                      </caption>
+                      <!-- для скринридера -->
+                      <tr>
+                        <td>35</td>
+                        <td>36</td>
+                        <td>37</td>
+                      </tr>
+                      <tr>
+                        <td>38</td>
+                        <td>39</td>
+                        <td>40</td>
+                      </tr>
+                      <tr>
+                        <td>41</td>
+                        <td>42</td>
+                        <td>43</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+                <div class="left-catalog__prop prop-btn">
+                  <button class="btn-reset prop-btn__apply btn">
+                    Применить
+                  </button>
+                  <button class="btn-reset prop-btn__reset">сбросить</button>
+                </div>
+              </div>
+              <div class="catalog__content content-catalog">
+                <ul class="content-catalog__list">
+                  <li class="content-catalog__item">
+                    <article class="product">
+                      <div class="product__image">
+                        <img src="img/image01.jpg" alt="img1" />
+                        <div class="product__btns">
+                          <button
+                            class="btn-reset product__button"
+                            aria-label="Показать информацию о товаре"
+                          >
+                            <svg>
+                              <use xlink:href="img/sprite.svg#view"></use>
+                            </svg>
+                          </button>
+                          <button
+                            class="btn-reset product__button"
+                            aria-label="Добавить товар в корзину"
+                          >
+                            <svg>
+                              <use
+                                xlink:href="img/sprite.svg#catalog-cart"
+                              ></use>
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                      <h3 class="product__title">
+                        Кроссовки Nike Air Force 1 '07 QS
+                      </h3>
+                      <span class="product__price">11 000 р</span>
+                    </article>
+                  </li>
+                </ul>
+                <button class="btn-reset content-catalog__btn btn">
+                  Показать еще
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="about">
+          <span class="about__bg-circle"></span>
+          <!-- красная точка -->
+          <div class="about__container _container">
+            <div class="about__text">
+              <h2 class="about__title">Пара слов о нас</h2>
+              <p>
+                <q>
+                  Спорт держит нас в&nbsp;форме. Учит дисциплине. Объединяет
+                  нас. Через спорт мы&nbsp;можем менять жизни. В&nbsp;том числе
+                  с&nbsp;помощью воодушевляющих историй спортсменов. Чтобы
+                  помочь тебе подняться и&nbsp;двигаться вперед.
+                </q>
+                <cite>MarkelSneak</cite>
+              </p>
+            </div>
+            <div class="about__img">
+              <img src="img/about-image.jpg" alt="" aria-hidden="true" />
+            </div>
+          </div>
+        </section>
+        <section class="quiz">
+          <div class="quiz__container _container">
+            <div class="quiz__content">
+              <h2 class="visually-hidden">Подбор товара - квиз</h2>
+              <!-- для SEO -->
+              <h3 class="quiz__title _title">
+                Мы подберем идеальную пару для вас
+              </h3>
+              <p class="quiz__descr">
+                Ответьте на три вопроса и мы вышлем каталог с самыми подходящими
+                для вас моделями
+              </p>
+              <form class="quiz-form" method="POST">
+                <div class="quiz-form__content"></div>
+                <!-- <div class="quiz-form__collection collection-quiz">
 					<h3 class="collection-quiz__title _title">Получить предложение</h3>
 					<p class="collection-quiz__descr">Получите подборку подходящих для вас моделей на почту</p>
 					<input type="text" placeholder="Ваше имя" class="collection-quiz__input">
 					<input type="email" placeholder="E-mail" class="collection-quiz__input">
 					<button class="btn-reset collection-quiz__btn btn">Получить</button>
 					<div class="collection-quiz__img">
-						<img src="../img/iphone.png" alt="">
+						<img src="img/iphone.png" alt="">
 					</div>
 				</div> -->
-			</form>
-		</div>
-	</div>
-</section>
-				<section class="team">
-	<div class="team__container _container">
-		<h2 class="team__title">Наша команда</h2>
-		<ul class="team__list">
-			<li class="team__item">
-				<img src="../img/team-member1.jpg" alt="Иван Маркелов" class="team__img">
-				<strong class="team__subtitle">Иван Маркелов</strong>
-				<span class="team__post">Администратор</span>
-			</li>
-			<li class="team__item">
-				<img src="../img/team-member2.jpg" alt="Иван Маркелов" class="team__img">
-				<strong class="team__subtitle">Иван Маркелов</strong>
-				<span class="team__post">Администратор</span>
-			</li>
-			<li class="team__item">
-				<img src="../img/team-member3.jpg" alt="Иван Маркелов" class="team__img">
-				<strong class="team__subtitle">Иван Маркелов</strong>
-				<span class="team__post">Администратор</span>
-			</li>
-			<li class="team__item">
-				<img src="../img/team-member4.jpg" alt="Иван Маркелов" class="team__img">
-				<strong class="team__subtitle">Иван Маркелов</strong>
-				<span class="team__post">Администратор</span>
-			</li>
-			<li class="team__item">
-				<img src="../img/team-member5.jpg" alt="Иван Маркелов" class="team__img">
-				<strong class="team__subtitle">Иван Маркелов</strong>
-				<span class="team__post">Администратор</span>
-			</li>
-			<li class="team__item">
-				<img src="../img/team-member6.jpg" alt="Иван Маркелов" class="team__img">
-				<strong class="team__subtitle">Иван Маркелов</strong>
-				<span class="team__post">Администратор</span>
-			</li>
-		</ul>
-	</div>
-</section>
-				<section class="faq">
-	<div class="faq__container _container">
-		<h2 class="faq__title _title">Часто задаваемые вопросы</h2>
-		<ul class="faq__accordion faq-accordion">
-				<li class="faq-accordion__item accordion-1">
-					<button class="btn-reset faq-accordion__control _accordion-control" aria-expanded="false"> <!-- aria-expanded="false" - элемент свернут -->
-						<span class="faq-accordion__title">Вопрос 1</span>
-						<span class="faq-accordion__icon"></span>
-					</button>
-					<div class="faq-accordion__content _accordion-content" aria-hidden="true"> <!-- aria-hidden="true" - скрываем контент от скринридера -->
-						<p>Далеко-далеко за словесными, горами в стране гласных и согласных живут рыбные, тексты. Буквоград вскоре, всеми гор свой строчка обеспечивает инициал рот щеке большой? Напоивший если вопроса подзаголовок текста предупредила они первую последний!
-						Его рукопись послушавшись свое правилами, меня подзаголовок, lorem она грамматики, выйти залетают деревни путь своих от всех, решила возвращайся сих заголовок. Своего пунктуация большого по всей мир то даль они собрал вскоре.</p>
-					</div>
-				</li>
-				<li class="faq-accordion__item accordion-2">
-					<button class="btn-reset faq-accordion__control _accordion-control" aria-expanded="false">
-						<span class="faq-accordion__title">Вопрос 2</span>
-						<span class="faq-accordion__icon"></span>
-					</button>
-					<div class="faq-accordion__content _accordion-content" aria-hidden="true">
-						<p>Далеко-далеко за словесными, горами в стране гласных и согласных живут рыбные, тексты. Буквоград вскоре, всеми гор свой строчка обеспечивает инициал рот щеке большой? Напоивший если вопроса подзаголовок текста предупредила они первую последний!
-						Его рукопись послушавшись свое правилами, меня подзаголовок, lorem она грамматики, выйти залетают деревни путь своих от всех, решила возвращайся сих заголовок. Своего пунктуация большого по всей мир то даль они собрал вскоре.</p>
-					</div>
-				</li>
-			</ul>
-	</div>
-</section>
-				<section class="contacts">
-  <div class="contacts__container _container">
-    <div class="contacts__text">
-      <h2 class="contacts__title _title">Контакты</h2>
-      <div class="contacts__addresses">
-        <address class="contacts__item">
-          <div class="contacts__office">
-            <h3 class="contacts__subtitle" style="margin: 0 10px 0 0">
-              Главный офис
-            </h3>
-            <div class="contacts__tooltip tooltip">
-              <button class="btn-reset tooltip__icon">
-                <svg>
-                  <use xlink:href="img/sprite.svg#tooltip-icon"></use>
-                </svg>
-              </button>
-              <span class="tooltip__text">
-                <p>
-                  Адрес и телефон для корреспонденции, инвесторов. Вопросы о
-                  доставке, качестве обслуживания и товара просьба задавать в
-                  отдел продаж
-                </p>
-              </span>
+              </form>
             </div>
           </div>
-          <a href="tel:+79657956098" class="contacts__phone"
-            >+7 965 795 60 98</a
-          >
-          <span class="contacts__address"
-            >г. Санкт-Петербург, Комсомольская, 43 к1</span
-          >
-        </address>
-        <address class="contacts__item">
-          <h3 class="contacts__subtitle">отдел продаж</h3>
-          <a href="tel:+79657956098" class="contacts__phone"
-            >+7 965 795 60 98</a
-          >
-          <span class="contacts__address"
-            >г. Санкт-Петербург, Комсомольская, 43 к1</span
-          >
-        </address>
-      </div>
-      <div class="contacts__links">
-        <a
-          href="https://vk.com/id57199137"
-          class="contacts__link"
-          target="_blank"
-        >
-          <svg>
-            <use xlink:href="img/sprite.svg#vk"></use>
-          </svg>
-        </a>
-        <a
-          href="https://vk.com/id57199137"
-          class="contacts__link"
-          target="_blank"
-        >
-          <svg>
-            <use xlink:href="img/sprite.svg#inst"></use>
-          </svg>
-        </a>
-      </div>
-    </div>
-    <div class="contacts__map" id="map"></div>
-  </div>
-</section>
-
-				<section class="instagram">
-  <h2 class="visually-hidden">Форма и инстаграм-лента</h2>
-  <div class="instagram__container _container">
-    <div class="instagram__left">
-      <form action="#" class="instagram__form form-questions">
-        <h3 class="form-questions__title _title">Есть вопросы?</h3>
-        <p class="form-questions__descr">
-          Заполните форму и наш менеджер свяжется с вами
-        </p>
-        <input
-          class="form-questions__input"
-          type="text"
-          placeholder="Ваше имя"
-        />
-        <input
-          class="form-questions__input"
-          type="tel"
-          placeholder="Номер телефона"
-        />
-        <button class="btn-reset form-questions__btn btn">Отправить</button>
-      </form>
-    </div>
-    <div class="instagram__right right-instagram">
-      <h3 class="right-instagram__title">
-        <a href="#" class="right-instagram__logo"
-          ><img src="../img/instagram_logo.png" alt=""
-        /></a>
-      </h3>
-      <div class="right-instagram__swiper swiper">
-        <div class="right-instagram__container swiper-wrapper">
-          <a href="#" class="right-instagram__item swiper-slide"
-            ><img src="../img/pappahapa1.jpg" alt=""
-          /></a>
-          <a href="#" class="right-instagram__item swiper-slide"
-            ><img src="../img/stetham.jpg" alt=""
-          /></a>
-          <a href="#" class="right-instagram__item swiper-slide"
-            ><img src="../img/tuinov.jpg" alt=""
-          /></a>
-          <a href="#" class="right-instagram__item swiper-slide"
-            ><img src="../img/instagram-majk-tajson.jpg" alt=""
-          /></a>
-          <a href="#" class="right-instagram__item swiper-slide"
-            ><img src="../img/pappahapa2.jpg" alt=""
-          /></a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-			</main>
-			<footer class="footer">
-	<div class="footer__container _container">
-		<div class="footer__container-grid">
-			<div class="footer__left">
-				<a class="footer__logo">MarkelSneak</a>
-			</div>
-			<div class="footer__right">
-				<nav class="footer__nav">
-					<ul class="footer__list">
-						<li><a href="" class="footer__link" data-catalog>Каталог</a></li>
-						<li><a href="" class="footer__link" data-about>О нас</a></li>
-						<li><a href="" class="footer__link" data-quiz>Подбор товара</a></li>
-						<li><a href="" class="footer__link" data-team>Наша команда</a></li>
-						<li><a href="" class="footer__link" data-faq>Доставка и оплата</a></li>
-						<li><a href="" class="footer__link" data-contacts>Контакты</a></li>
-					</ul>
-				</nav>
-			</div>
-		</div>
-	</div>
-</footer>
-			<div class="modal">
-  <div
-    class="modal__container product-modal"
-    role="complementary"
-    aria-modal="true"
-    data-target="product-modal"
-  >
-    <button class="btn-reset modal__close" aria-label="Закрыть модальное окно">
-      X
-    </button>
-    <div class="modal-content">
-      <div class="product-modal__wrapper">
-        <div class="product-modal__item item-left">
-          <div class="item-left__mainslider swiper">
-            <div class="swiper-wrapper">
-              <div class="item-left__mainslide swiper-slide">
-                <img src="../img/instagram-majk-tajson.jpg" alt="" />
-              </div>
-              <div class="item-left__mainslide swiper-slide">
-                <img src="../img/instagram-majk-tajson.jpg" alt="" />
-              </div>
-              <div class="item-left__mainslide swiper-slide">
-                <img src="../img/instagram-majk-tajson.jpg" alt="" />
-              </div>
-            </div>
+        </section>
+        <section class="team">
+          <div class="team__container _container">
+            <h2 class="team__title">Наша команда</h2>
+            <ul class="team__list">
+              <li class="team__item">
+                <img
+                  src="img/team-member1.jpg"
+                  alt="Иван Маркелов"
+                  class="team__img"
+                />
+                <strong class="team__subtitle">Иван Маркелов</strong>
+                <span class="team__post">Администратор</span>
+              </li>
+              <li class="team__item">
+                <img
+                  src="img/team-member2.jpg"
+                  alt="Иван Маркелов"
+                  class="team__img"
+                />
+                <strong class="team__subtitle">Иван Маркелов</strong>
+                <span class="team__post">Администратор</span>
+              </li>
+              <li class="team__item">
+                <img
+                  src="img/team-member3.jpg"
+                  alt="Иван Маркелов"
+                  class="team__img"
+                />
+                <strong class="team__subtitle">Иван Маркелов</strong>
+                <span class="team__post">Администратор</span>
+              </li>
+              <li class="team__item">
+                <img
+                  src="img/team-member4.jpg"
+                  alt="Иван Маркелов"
+                  class="team__img"
+                />
+                <strong class="team__subtitle">Иван Маркелов</strong>
+                <span class="team__post">Администратор</span>
+              </li>
+              <li class="team__item">
+                <img
+                  src="img/team-member5.jpg"
+                  alt="Иван Маркелов"
+                  class="team__img"
+                />
+                <strong class="team__subtitle">Иван Маркелов</strong>
+                <span class="team__post">Администратор</span>
+              </li>
+              <li class="team__item">
+                <img
+                  src="img/team-member6.jpg"
+                  alt="Иван Маркелов"
+                  class="team__img"
+                />
+                <strong class="team__subtitle">Иван Маркелов</strong>
+                <span class="team__post">Администратор</span>
+              </li>
+            </ul>
           </div>
-          <div class="item-left__subslider swiper">
-            <div class="swiper-wrapper">
-              <div class="item-left__subslide swiper-slide">
-                <img src="../img/instagram-majk-tajson.jpg" alt="" />
-              </div>
-              <div class="item-left__subslide swiper-slide">
-                <img src="../img/instagram-majk-tajson.jpg" alt="" />
-              </div>
-              <div class="item-left__subslide swiper-slide">
-                <img src="../img/instagram-majk-tajson.jpg" alt="" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="product-modal__item item-right">
-          <div class="item-right__container">
-            <div class="item-right__top top-right" data-da="item-left,880,0">
-              <span class="top-right__article">Артикул: 879876</span>
-              <span class="top-right__quantity"
-                >В наличии:<span>13 шт</span></span
-              >
-            </div>
-            <h3
-              class="item-right__title _product-title"
-              data-da="item-left,880,first"
-            >
-              Женские кроссовки Puma Force 1 Shadow
-            </h3>
-            <div class="item-right__rating">
-              <img src="../img/star.svg" alt="Рейтинг: 5 звезд из 5" />
-              <img src="../img/star.svg" alt="" />
-              <img src="../img/star.svg" alt="" />
-              <img src="../img/star.svg" alt="" />
-              <img src="../img/star.svg" alt="" />
-            </div>
-            <div class="item-right__sizes sizes">
-              <span class="sizes__subtitle">Выберите размер</span>
-              <div class="sizes__numbers">
-                <button class="btn-reset sizes__number">36</button>
-                <button class="btn-reset sizes__number">36</button>
-                <button class="btn-reset sizes__number">36</button>
-                <button class="btn-reset sizes__number">36</button>
-                <button class="btn-reset sizes__number">36</button>
-              </div>
-            </div>
-            <div class="item-right__prices">
-              <span class="item-right__price">19 789</span>
-              <span class="item-right__old-price">20 578</span>
-            </div>
-          </div>
-          <button class="btn-reset item-right__btn btn">Заказать</button>
-          <ul class="item-right__list">
-            <li class="item-right__point">Бесплатная доставка до двери</li>
-            <li class="item-right__point">Оплата заказа при получении</li>
-            <li class="item-right__point">Бесплатная доставка до двери</li>
-          </ul>
-        </div>
-      </div>
-      <div class="product-modal__property property-modal">
-        <div class="property-modal__item">
-          <h3 class="property-modal__title _product-title">Описание</h3>
-          <p class="property-modal__text product-description">
-            Кроссовки Nike Blazer Mid '77 Vintage Suede с винтажной подошвой
-            возрождают стиль баскетбольных моделей Nike прошлого, создавая
-            впечатление, что они хранились в шкафу долгие годы.
-          </p>
-        </div>
-        <div class="property-modal__item">
-          <h3 class="property-modal__title _product-title">Характеристики</h3>
-          <div class="property-modal__wrapper product-chars">
-            <p class="property-modal__text">Пол: Мужской</p>
-            <p class="property-modal__text">Цвета: Разноцветный</p>
-            <p class="property-modal__text">Состав: Кожа, текстиль, резина</p>
-            <p class="property-modal__text">Страна: Вьетнам</p>
-          </div>
-        </div>
-      </div>
-      <div class="product-modal__video">
-        <iframe
-          src="https://www.youtube.com/embed/PBwAxmrE194"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-      </div>
-    </div>
-  </div>
-  <div
-    class="modal__container cart-modal"
-    role="complementary"
-    aria-modal="true"
-    data-target="cart-modal"
-  >
-    <button class="btn-reset modal__close" aria-label="Закрыть модальное окно">
-      X
-    </button>
-    <div class="modal-content">
-      <div class="cart-modal__top">
-        <h2 class="cart-modal__title">Оформление заказа</h2>
-        <span>Заказ 3456 67</span>
-      </div>
-      <div class="cart-modal__info info-order">
-        <div class="info-order__element _quantity">
-          Товаров в заказе: <span>3 шт</span>
-        </div>
-        <div class="info-order__element _summ">
-          Общая сумма заказа: <span>25 789 ₽</span>
-        </div>
-        <div class="info-order__composition _orderAccordion _open _is-open">
-          <button
-            class="btn-reset info-order__btn _accordion-control"
-            aria-expanded="true"
-          >
-            Состав заказа
-          </button>
-          <ul class="info-order__list _accordion-content" aria-hidden="false">
-            <li class="cart-product__item">
-              <article class="cart-product">
-                <div class="cart-product__img">
-                  <img src="../img/image01.jpg" alt="" />
+        </section>
+        <section class="faq">
+          <div class="faq__container _container">
+            <h2 class="faq__title _title">Часто задаваемые вопросы</h2>
+            <ul class="faq__accordion faq-accordion">
+              <li class="faq-accordion__item accordion-1">
+                <button
+                  class="btn-reset faq-accordion__control _accordion-control"
+                  aria-expanded="false"
+                >
+                  <!-- aria-expanded="false" - элемент свернут -->
+                  <span class="faq-accordion__title">Вопрос 1</span>
+                  <span class="faq-accordion__icon"></span>
+                </button>
+                <div
+                  class="faq-accordion__content _accordion-content"
+                  aria-hidden="true"
+                >
+                  <!-- aria-hidden="true" - скрываем контент от скринридера -->
+                  <p>
+                    Далеко-далеко за словесными, горами в стране гласных и
+                    согласных живут рыбные, тексты. Буквоград вскоре, всеми гор
+                    свой строчка обеспечивает инициал рот щеке большой?
+                    Напоивший если вопроса подзаголовок текста предупредила они
+                    первую последний! Его рукопись послушавшись свое правилами,
+                    меня подзаголовок, lorem она грамматики, выйти залетают
+                    деревни путь своих от всех, решила возвращайся сих
+                    заголовок. Своего пунктуация большого по всей мир то даль
+                    они собрал вскоре.
+                  </p>
                 </div>
-                <div class="cart-product__wrapper">
-                  <h3 class="cart-product__title">
+              </li>
+              <li class="faq-accordion__item accordion-2">
+                <button
+                  class="btn-reset faq-accordion__control _accordion-control"
+                  aria-expanded="false"
+                >
+                  <span class="faq-accordion__title">Вопрос 2</span>
+                  <span class="faq-accordion__icon"></span>
+                </button>
+                <div
+                  class="faq-accordion__content _accordion-content"
+                  aria-hidden="true"
+                >
+                  <p>
+                    Далеко-далеко за словесными, горами в стране гласных и
+                    согласных живут рыбные, тексты. Буквоград вскоре, всеми гор
+                    свой строчка обеспечивает инициал рот щеке большой?
+                    Напоивший если вопроса подзаголовок текста предупредила они
+                    первую последний! Его рукопись послушавшись свое правилами,
+                    меня подзаголовок, lorem она грамматики, выйти залетают
+                    деревни путь своих от всех, решила возвращайся сих
+                    заголовок. Своего пунктуация большого по всей мир то даль
+                    они собрал вскоре.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="contacts">
+          <div class="contacts__container _container">
+            <div class="contacts__text">
+              <h2 class="contacts__title _title">Контакты</h2>
+              <div class="contacts__addresses">
+                <address class="contacts__item">
+                  <div class="contacts__office">
+                    <h3 class="contacts__subtitle" style="margin: 0 10px 0 0">
+                      Главный офис
+                    </h3>
+                    <div class="contacts__tooltip tooltip">
+                      <button class="btn-reset tooltip__icon">
+                        <svg>
+                          <use xlink:href="img/sprite.svg#tooltip-icon"></use>
+                        </svg>
+                      </button>
+                      <span class="tooltip__text">
+                        <p>
+                          Адрес и телефон для корреспонденции, инвесторов.
+                          Вопросы о доставке, качестве обслуживания и товара
+                          просьба задавать в отдел продаж
+                        </p>
+                      </span>
+                    </div>
+                  </div>
+                  <a href="tel:+79657956098" class="contacts__phone"
+                    >+7 965 795 60 98</a
+                  >
+                  <span class="contacts__address"
+                    >г. Санкт-Петербург, Комсомольская, 43 к1</span
+                  >
+                </address>
+                <address class="contacts__item">
+                  <h3 class="contacts__subtitle">отдел продаж</h3>
+                  <a href="tel:+79657956098" class="contacts__phone"
+                    >+7 965 795 60 98</a
+                  >
+                  <span class="contacts__address"
+                    >г. Санкт-Петербург, Комсомольская, 43 к1</span
+                  >
+                </address>
+              </div>
+              <div class="contacts__links">
+                <a
+                  href="https://vk.com/id57199137"
+                  class="contacts__link"
+                  target="_blank"
+                >
+                  <svg>
+                    <use xlink:href="img/sprite.svg#vk"></use>
+                  </svg>
+                </a>
+                <a
+                  href="https://vk.com/id57199137"
+                  class="contacts__link"
+                  target="_blank"
+                >
+                  <svg>
+                    <use xlink:href="img/sprite.svg#inst"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="contacts__map" id="map"></div>
+          </div>
+        </section>
+
+        <section class="instagram">
+          <h2 class="visually-hidden">Форма и инстаграм-лента</h2>
+          <div class="instagram__container _container">
+            <div class="instagram__left">
+              <form action="#" class="instagram__form form-questions">
+                <h3 class="form-questions__title _title">Есть вопросы?</h3>
+                <p class="form-questions__descr">
+                  Заполните форму и наш менеджер свяжется с вами
+                </p>
+                <input
+                  class="form-questions__input"
+                  type="text"
+                  placeholder="Ваше имя"
+                />
+                <input
+                  class="form-questions__input"
+                  type="tel"
+                  placeholder="Номер телефона"
+                />
+                <button class="btn-reset form-questions__btn btn">
+                  Отправить
+                </button>
+              </form>
+            </div>
+            <div class="instagram__right right-instagram">
+              <h3 class="right-instagram__title">
+                <a href="#" class="right-instagram__logo"
+                  ><img src="img/instagram_logo.png" alt=""
+                /></a>
+              </h3>
+              <div class="right-instagram__swiper swiper">
+                <div class="right-instagram__container swiper-wrapper">
+                  <a href="#" class="right-instagram__item swiper-slide"
+                    ><img src="img/pappahapa1.jpg" alt=""
+                  /></a>
+                  <a href="#" class="right-instagram__item swiper-slide"
+                    ><img src="img/stetham.jpg" alt=""
+                  /></a>
+                  <a href="#" class="right-instagram__item swiper-slide"
+                    ><img src="img/tuinov.jpg" alt=""
+                  /></a>
+                  <a href="#" class="right-instagram__item swiper-slide"
+                    ><img src="img/instagram-majk-tajson.jpg" alt=""
+                  /></a>
+                  <a href="#" class="right-instagram__item swiper-slide"
+                    ><img src="img/pappahapa2.jpg" alt=""
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__container _container">
+          <div class="footer__container-grid">
+            <div class="footer__left">
+              <a class="footer__logo">MarkelSneak</a>
+            </div>
+            <div class="footer__right">
+              <nav class="footer__nav">
+                <ul class="footer__list">
+                  <li>
+                    <a href="" class="footer__link" data-catalog>Каталог</a>
+                  </li>
+                  <li><a href="" class="footer__link" data-about>О нас</a></li>
+                  <li>
+                    <a href="" class="footer__link" data-quiz>Подбор товара</a>
+                  </li>
+                  <li>
+                    <a href="" class="footer__link" data-team>Наша команда</a>
+                  </li>
+                  <li>
+                    <a href="" class="footer__link" data-faq
+                      >Доставка и оплата</a
+                    >
+                  </li>
+                  <li>
+                    <a href="" class="footer__link" data-contacts>Контакты</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="modal">
+        <div
+          class="modal__container product-modal"
+          role="complementary"
+          aria-modal="true"
+          data-target="product-modal"
+        >
+          <button
+            class="btn-reset modal__close"
+            aria-label="Закрыть модальное окно"
+          >
+            X
+          </button>
+          <div class="modal-content">
+            <div class="product-modal__wrapper">
+              <div class="product-modal__item item-left">
+                <div class="item-left__mainslider swiper">
+                  <div class="swiper-wrapper">
+                    <div class="item-left__mainslide swiper-slide">
+                      <img src="img/instagram-majk-tajson.jpg" alt="" />
+                    </div>
+                    <div class="item-left__mainslide swiper-slide">
+                      <img src="img/instagram-majk-tajson.jpg" alt="" />
+                    </div>
+                    <div class="item-left__mainslide swiper-slide">
+                      <img src="img/instagram-majk-tajson.jpg" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="item-left__subslider swiper">
+                  <div class="swiper-wrapper">
+                    <div class="item-left__subslide swiper-slide">
+                      <img src="img/instagram-majk-tajson.jpg" alt="" />
+                    </div>
+                    <div class="item-left__subslide swiper-slide">
+                      <img src="img/instagram-majk-tajson.jpg" alt="" />
+                    </div>
+                    <div class="item-left__subslide swiper-slide">
+                      <img src="img/instagram-majk-tajson.jpg" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-modal__item item-right">
+                <div class="item-right__container">
+                  <div
+                    class="item-right__top top-right"
+                    data-da="item-left,880,0"
+                  >
+                    <span class="top-right__article">Артикул: 879876</span>
+                    <span class="top-right__quantity"
+                      >В наличии:<span>13 шт</span></span
+                    >
+                  </div>
+                  <h3
+                    class="item-right__title _product-title"
+                    data-da="item-left,880,first"
+                  >
                     Женские кроссовки Puma Force 1 Shadow
                   </h3>
-                  <div class="cart-product__price">8 789 ₽</div>
+                  <div class="item-right__rating">
+                    <img src="img/star.svg" alt="Рейтинг: 5 звезд из 5" />
+                    <img src="img/star.svg" alt="" />
+                    <img src="img/star.svg" alt="" />
+                    <img src="img/star.svg" alt="" />
+                    <img src="img/star.svg" alt="" />
+                  </div>
+                  <div class="item-right__sizes sizes">
+                    <span class="sizes__subtitle">Выберите размер</span>
+                    <div class="sizes__numbers">
+                      <button class="btn-reset sizes__number">36</button>
+                      <button class="btn-reset sizes__number">36</button>
+                      <button class="btn-reset sizes__number">36</button>
+                      <button class="btn-reset sizes__number">36</button>
+                      <button class="btn-reset sizes__number">36</button>
+                    </div>
+                  </div>
+                  <div class="item-right__prices">
+                    <span class="item-right__price">19 789</span>
+                    <span class="item-right__old-price">20 578</span>
+                  </div>
                 </div>
-                <button class="btn-reset cart-product__delete">Удалить</button>
-              </article>
-            </li>
-            <!-- <li class="cart-product__item">
+                <button class="btn-reset item-right__btn btn">Заказать</button>
+                <ul class="item-right__list">
+                  <li class="item-right__point">
+                    Бесплатная доставка до двери
+                  </li>
+                  <li class="item-right__point">Оплата заказа при получении</li>
+                  <li class="item-right__point">
+                    Бесплатная доставка до двери
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="product-modal__property property-modal">
+              <div class="property-modal__item">
+                <h3 class="property-modal__title _product-title">Описание</h3>
+                <p class="property-modal__text product-description">
+                  Кроссовки Nike Blazer Mid '77 Vintage Suede с винтажной
+                  подошвой возрождают стиль баскетбольных моделей Nike прошлого,
+                  создавая впечатление, что они хранились в шкафу долгие годы.
+                </p>
+              </div>
+              <div class="property-modal__item">
+                <h3 class="property-modal__title _product-title">
+                  Характеристики
+                </h3>
+                <div class="property-modal__wrapper product-chars">
+                  <p class="property-modal__text">Пол: Мужской</p>
+                  <p class="property-modal__text">Цвета: Разноцветный</p>
+                  <p class="property-modal__text">
+                    Состав: Кожа, текстиль, резина
+                  </p>
+                  <p class="property-modal__text">Страна: Вьетнам</p>
+                </div>
+              </div>
+            </div>
+            <div class="product-modal__video">
+              <iframe
+                src="https://www.youtube.com/embed/PBwAxmrE194"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+        <div
+          class="modal__container cart-modal"
+          role="complementary"
+          aria-modal="true"
+          data-target="cart-modal"
+        >
+          <button
+            class="btn-reset modal__close"
+            aria-label="Закрыть модальное окно"
+          >
+            X
+          </button>
+          <div class="modal-content">
+            <div class="cart-modal__top">
+              <h2 class="cart-modal__title">Оформление заказа</h2>
+              <span>Заказ 3456 67</span>
+            </div>
+            <div class="cart-modal__info info-order">
+              <div class="info-order__element _quantity">
+                Товаров в заказе: <span>3 шт</span>
+              </div>
+              <div class="info-order__element _summ">
+                Общая сумма заказа: <span>25 789 ₽</span>
+              </div>
+              <div
+                class="info-order__composition _orderAccordion _open _is-open"
+              >
+                <button
+                  class="btn-reset info-order__btn _accordion-control"
+                  aria-expanded="true"
+                >
+                  Состав заказа
+                </button>
+                <ul
+                  class="info-order__list _accordion-content"
+                  aria-hidden="false"
+                >
+                  <li class="cart-product__item">
+                    <article class="cart-product">
+                      <div class="cart-product__img">
+                        <img src="img/image01.jpg" alt="" />
+                      </div>
+                      <div class="cart-product__wrapper">
+                        <h3 class="cart-product__title">
+                          Женские кроссовки Puma Force 1 Shadow
+                        </h3>
+                        <div class="cart-product__price">8 789 ₽</div>
+                      </div>
+                      <button class="btn-reset cart-product__delete">
+                        Удалить
+                      </button>
+                    </article>
+                  </li>
+                  <!-- <li class="cart-product__item">
 							<article class="cart-product">
 								<div class="cart-product__img">
-									<img src="../img/image01.jpg" alt="">
+									<img src="img/image01.jpg" alt="">
 								</div>
 								<div class="cart-product__wrapper">
 									<h3 class="cart-product__title">Женские кроссовки Puma Force 1 Shadow</h3>
@@ -690,7 +854,7 @@
 						<li class="cart-product__item">
 							<article class="cart-product">
 								<div class="cart-product__img">
-									<img src="../img/image01.jpg" alt="">
+									<img src="img/image01.jpg" alt="">
 								</div>
 								<div class="cart-product__wrapper">
 									<h3 class="cart-product__title">Женские кроссовки Puma Force 1 Shadow</h3>
@@ -699,27 +863,28 @@
 								<button class="btn-reset cart-product__delete">Удалить</button>
 							</article>
 						</li> -->
-          </ul>
+                </ul>
+              </div>
+            </div>
+            <form action="#" class="cart-modal__form">
+              <div class="cart-modal__inputs">
+                <input type="text" placeholder="Ваше имя" />
+                <input type="tel" placeholder="Номер телефона" />
+                <input type="email" placeholder="E-mail" />
+              </div>
+              <button class="btn-reset cart-modal__btn btn">
+                Оформить заказ
+              </button>
+            </form>
+          </div>
         </div>
       </div>
-      <form action="#" class="cart-modal__form">
-        <div class="cart-modal__inputs">
-          <input type="text" placeholder="Ваше имя" />
-          <input type="tel" placeholder="Номер телефона" />
-          <input type="email" placeholder="E-mail" />
-        </div>
-        <button class="btn-reset cart-modal__btn btn">Оформить заказ</button>
-      </form>
     </div>
-  </div>
-</div>
-
-		</div>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.7.0/nouislider.min.js"></script>
-		<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-		<script src="https://api-maps.yandex.ru/2.1/?apikey=d4c643cf-cdd6-40f3-9ff2-fa7a86a70dd4&lang=ru_RU"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/simplebar/5.3.6/simplebar.min.js"></script>
-		<script src="js/vendor.js"></script>
-		<script src="js/main.js"></script>
-	</body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.7.0/nouislider.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=d4c643cf-cdd6-40f3-9ff2-fa7a86a70dd4&lang=ru_RU"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplebar/5.3.6/simplebar.min.js"></script>
+    <script src="js/vendor.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
