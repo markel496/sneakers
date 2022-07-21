@@ -143,7 +143,7 @@ var cartLogic = function cartLogic() {
 
 var loadCartData = function loadCartData() {
   var id = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 1;
-  fetch('../data/data.json').then(function (response) {
+  fetch('data/data.json').then(function (response) {
     return response.json(); //преобразует json в js
   }).then(function (data) {
     var _iterator = _createForOfIteratorHelper(data),
@@ -461,7 +461,7 @@ var dataLength = null; //в этой переменной будет храни�
 if (catalogList) {
   var loadProducts = function loadProducts() {
     var quantity = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 8;
-    fetch('../../data/data.json').then(function (response) {
+    fetch('data/data.json').then(function (response) {
       return response.json(); //преобразует json в js
     }).then(function (data) {
       console.log(data);
@@ -547,7 +547,7 @@ if (catalogList) {
 
   var loadModalData = function loadModalData() {
     var id = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 1;
-    fetch('../data/data.json').then(function (response) {
+    fetch('data/data.json').then(function (response) {
       return response.json(); //преобразует json в js
     }).then(function (data) {
       // // productModal.innerHTML = '';//очищаем модалку перед загрузкой новых данных
