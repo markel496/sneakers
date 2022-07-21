@@ -860,7 +860,10 @@ var Quiz = /*#__PURE__*/function () {
       this.$el.innerHTML = quizTemplate(quizData[this.counter], this.dataLength, this.options);
       var quizOffset = document.querySelector('.quiz').offsetTop - 64; //вычитаю высоту хедера
 
-      window.scroll(0, quizOffset);
+      window.scrollTo({
+        top: quizOffset,
+        behavior: 'smooth',
+      });
 
       if (this.counter == 0) {
         this.$el.querySelector('[data-prev-btn]').style.display = 'none';
@@ -880,7 +883,10 @@ var Quiz = /*#__PURE__*/function () {
         this.$el.innerHTML = quizTemplate(quizData[this.counter], this.dataLength, this.options);
         var quizOffset = document.querySelector('.quiz').offsetTop - 64; //вычитаю высоту хедера
 
-        window.scroll(0, quizOffset);
+        window.scrollTo({
+          top: quizOffset,
+          behavior: 'smooth',
+        });
       }
     }
   }, {
