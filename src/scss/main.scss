@@ -1,0 +1,273 @@
+@mixin font($font_name, $file_name, $weight, $style) {
+
+	@font-face {
+		font-family: $font_name;
+		font-display: swap;
+		src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2");
+		font-weight: #{$weight};
+		font-style: #{$style};
+	}
+}
+
+//=====================================================================================================================
+
+//<ПЕРЕМЕННЫЕ>=========================================================================================================
+
+$minWidth: 320px;
+$maxWidth: 1400;
+$maxWidthContainer: 1210;
+$md1: $maxWidthContainer + 12;
+$md2: 991.98;
+$md3: 767.98;
+$md4: 479.98;
+
+//Шрифт по умолчанию
+$fontfamily: "IntroBook";
+
+//Отступы
+$grid-gap: 20px;
+
+//colors
+$east-bay: #484283;
+$carnation-btn: #f14f4f;
+$carnation-hover-btn: #cc4949;
+$carnation-active-btn: #8c2828;
+
+%subtitle {
+	display: block;
+	font-family: Intro;
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 30px;
+}
+
+//</ПЕРЕМЕННЫЕ>======================================================================================================== 
+
+html, body{
+	height: 100%;
+}
+
+*,*:before,*:after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+:focus, :active {
+	outline: none;
+}
+
+// *:focus {
+// 	outline: 1px solid red;
+// }
+
+body {
+	font-family: $fontfamily;
+	font-size: 16px;
+	color: #444b58;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+img {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.btn-reset {
+	border: none;
+	cursor: pointer;
+	background: transparent;
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	overflow: hidden;
+	border: 0;
+	clip: rect(0 0 0 0);
+}
+
+.disable-scroll {
+	// position: relative;
+	overflow: hidden;
+	height: 100%;
+	/*Для apple*/
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+}
+
+//<ОБОЛОЧКА>=======================================================================================================
+
+.wrapper {
+	width: 100%;
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+//</ОБОЛОЧКА>======================================================================================================
+
+//<ОСНОВНАЯ СЕТКА>=================================================================================================
+
+._container {
+	max-width: $maxWidthContainer + px;
+	margin: 0 auto;
+	padding: 0 15px;
+	@media (max-width: 490px) {
+		padding: 0 10px;
+	}
+	// @media (max-width: $md1+px) {
+	// 	max-width: 970px;
+	// }
+	// @media (max-width: $md2+px) {
+	// 	max-width: 750px;
+	// }
+	// @media (max-width: $md3+px) {
+	// 	max-width: none;
+	// 	padding: 0 10px;
+	// }
+}
+
+//</ОСНОВНАЯ СЕТКА>===============================================================================================
+
+.icon-menu {
+	display: none;
+	@media (max-width: 1024px) {
+		display: block;
+		position: relative;
+		width: 30px;
+		height: 18px;
+		cursor: pointer;
+		z-index: 5;
+		span {
+			top: calc(50% - 1px);
+			left: 0;
+			position: absolute;
+			width: 100%;
+			height: 2px;
+			background-color: #fff;
+			transition: all .3s;
+			&:first-child {
+				top: 0;
+			}
+			&:last-child {
+				top: auto;
+				bottom: 0;
+			}
+		}
+		&._active {
+			span{
+				transform: scale(0);
+				&:first-child{
+					transform: rotate(-45deg);
+					top: calc(50% - 1px);
+				}
+				&:last-child{
+					transform: rotate(45deg);
+					bottom: calc(50% - 1px);
+				}
+			}
+			// & + .header__left + .header__right {
+			// 	display: block;
+			// }
+		}
+	}
+}
+
+.btn {
+	padding: 22px 47px;
+	border-radius: 4px;
+	font-size: 16px;
+	line-height: 16px;
+	font-family: Intro;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: ease-in-out .3s;
+}
+
+._title {
+	font-family: Intro;
+   font-weight: 700;
+   font-size: 30px;
+}
+
+
+.checkbox {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	opacity: 0;
+}
+
+.checkbox:checked + span::after {
+	opacity: 1;
+}
+
+.checkbox__text {
+	position: relative;
+	display: inline-flex;
+	align-items: center;
+	cursor: pointer;
+	&:before {
+		content: '';
+		width: 24px;
+		height: 24px;
+		border: 1px solid #dbbba9;
+		border-radius: 4px;
+		display: inline-block;
+		margin: 0 10px 0 0;
+	}
+	&:after {
+		content: "";
+		position: absolute;
+		width: 15px;
+		height: 12px;
+		left: 5px;
+		background: url("../img/checkbox.svg") center no-repeat;
+		opacity: 0;
+		transition: .3s;
+	}
+	&.error {
+		&:before {
+			outline: 1px solid red;
+		}
+	}
+}
+
+// .error {
+// 	outline: 1px solid red;
+// }
+
+//========================================================================================================================
+
+@import "fonts";
+@import "header";
+@import "hero";
+@import "catalog";
+@import "about";
+@import "quiz";
+@import "team";
+@import "faq";
+@import "contacts";
+@import "instagram";
+@import "footer";
+@import "modal";
+
+//========================================================================================================================

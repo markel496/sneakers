@@ -1,0 +1,104 @@
+.footer {
+	background-color: #444b58;
+	/* .footer__container */
+	&__container {
+	}
+	/* .footer__container-grid */
+	&__container-grid {
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+		gap: $grid-gap;
+		align-items: center;
+		min-height: 80px;
+		padding: 25px 0 15px;
+		@media (max-width: 950px) {
+			display: flex;
+			gap: 0;
+		}
+		@media (max-width: 625px) {
+			flex-direction: column-reverse;
+		}
+	}
+	/* .footer__left */
+	&__left {
+		grid-column: 3 span;//элемент займет 3 колонки
+		@media (max-width: 950px) {
+			flex: 1 1 auto;
+		}
+	}
+	/* .footer__logo */
+	&__logo {
+		@extend %subtitle;
+		color: #fff;
+	}
+	/* .footer__right */
+	&__right {
+		grid-column: 9 span;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		@media (max-width: 950px) {
+			margin: 0 0 0 40px;
+		}
+		@media (max-width: 625px) {
+			margin: 0 0 15px 0;
+			padding: 0 0 15px 0;
+			position: relative;
+			&::after {
+				content: "";
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				height: 1px;
+				width: 100%;
+				background-color: #fff;
+			}
+		}
+	}
+	/* .footer__nav */
+	&__nav {
+	}
+	/* .footer__list */
+	&__list {
+		display: flex;
+		align-items: center;
+		li {
+			&:not(:last-child) {
+				margin: 0 40px 0 0;		
+			}
+			@media (max-width: 950px) {
+				&:not(:last-child) {
+					margin: 0;		
+				}
+			}
+		}
+		@media (max-width: 950px) {
+			flex-wrap: wrap;
+			gap: 15px 40px;
+		}
+	}
+	/* .footer__link */
+	&__link {
+		font-size: 14px;
+		color: #fff;
+		position: relative;
+		@media (min-width: $md2+px) {// hhv snipet
+			&::after {
+				content: "";
+				display: block;
+				background-color: #fff;
+				width: 0;
+				height: 1px;
+    			position: absolute;
+    			left: 50%;
+    			transform: translateX(-50%);
+    			transition: width 0.4s ease-in-out;
+			}
+			&:hover {
+				&::after {
+					width: 100%;
+				}
+			}
+		}
+	}
+}

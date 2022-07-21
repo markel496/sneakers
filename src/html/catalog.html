@@ -1,0 +1,85 @@
+<section class="catalog">
+	<div class="catalog__container _container">
+		<h1 class="catalog__title _title">Каталог</h1>
+		<div class="catalog__grid">
+			<div class="catalog__left left-catalog">
+				<h2 class="left-catalog__subtitle">Подбор по&nbsp;параметрам</h2>
+				<div class="left-catalog__prop prop-catalog">
+					<strong class="prop-catalog__name">Цена, руб</strong>
+					<div class="prop-catalog__inner price-catalog">
+						<input type="text" class="price-catalog__value" id="price-start">
+						<span></span>
+						<input type="text" class="price-catalog__value" id="price-end">
+						<div class="price-catalog__element" id="slider"></div>
+					</div>
+				</div>
+				<div class="left-catalog__prop prop-catalog">
+					<strong class="prop-catalog__name">Пол</strong>
+					<div class="prop-catalog__inner checkbox-catalog">
+						<label class="checkbox-catalog__label">
+							<input class="checkbox" type="checkbox">
+							<span class="checkbox-catalog__text checkbox__text">мужской</span>
+						</label>
+						<label class="checkbox-catalog__label">
+							<input class="checkbox" type="checkbox">
+							<span class="checkbox-catalog__text checkbox__text">женский</span>
+						</label>
+					</div>
+				</div>
+				<div class="left-catalog__prop prop-catalog">
+					<strong class="prop-catalog__name">Размер</strong>
+					<div class="prop-catalog__inner tabel-catalog">
+						<table>
+							<caption>Таблица размеров</caption><!-- для скринридера -->
+							<tr>
+								<td>35</td>
+								<td>36</td>
+								<td>37</td>
+							</tr>
+							<tr>
+								<td>38</td>
+								<td>39</td>
+								<td>40</td>
+							</tr>
+							<tr>
+								<td>41</td>
+								<td>42</td>
+								<td>43</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div class="left-catalog__prop prop-btn">
+					<button class="btn-reset prop-btn__apply btn">Применить</button>
+					<button class="btn-reset prop-btn__reset">сбросить</button>
+				</div>
+			</div>
+			<div class="catalog__content content-catalog">
+				<ul class="content-catalog__list">
+					<li class="content-catalog__item">
+						<article class="product">
+							<div class="product__image">
+								<img src="../img/image01.jpg" alt="img1">
+								<div class="product__btns">
+									<button class="btn-reset product__button" aria-label="Показать информацию о товаре">
+										<svg>
+											<use xlink:href="img/sprite.svg#view"></use>
+										</svg>
+									</button>
+									<button class="btn-reset product__button" aria-label="Добавить товар в корзину">
+										<svg>
+											<use xlink:href="img/sprite.svg#catalog-cart"></use>
+										</svg>
+									</button>
+								</div>
+							</div>
+							<h3 class="product__title">Кроссовки Nike Air Force 1 '07 QS</h3>
+							<span class="product__price">11 000 р</span>
+						</article>
+					</li>
+				</ul>
+				<button class="btn-reset content-catalog__btn btn">Показать еще</button>
+			</div>
+		</div>
+	</div>
+</section>

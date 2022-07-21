@@ -1,0 +1,95 @@
+.hero {
+	padding: 164px 0 100px 0;
+	background-color: $east-bay;
+	position: relative;
+	margin: 0 0 60px 0;
+	@media (max-width: $md3+px) {
+		padding: 94px 0 40px 0;
+		margin: 0 0 30px 0;
+	}
+	/* .hero__bg-text */
+	&__bg-text {
+		position: absolute;
+		font-family: Intro;
+		font-size: 180px;
+		color: rgba(255, 255, 255, 0.12);
+		line-height: 150px;
+		top: calc(50% + 32px); //одинаковое расстояние без учета хэдера
+		left: 50%;
+		transform: translate(-50%, -50%);
+		pointer-events: none;
+		@media (max-width: 1125px) {
+			font-size: 155px;
+			line-height: normal;
+		}
+		@media (max-width: $md2+px) {
+			font-size: 120px;
+		}
+		@media (max-width: $md3+px) {
+			font-size: 88px;
+		}
+		@media (max-width: 620px) {
+			transform-origin: 50% -660% 0;
+			transform: rotate(21deg);
+			font-size: 84px;
+		}
+		@media (max-width: $md4+px) {
+			display: none;
+		}
+	}
+	/* .hero__container */
+	&__container {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		@media (max-width: 620px) {
+			align-items: center;
+		}
+	}
+	/* .hero__title */
+	&__title {
+		font-family: Intro;
+		font-size: 36px;
+		line-height: 140%;
+		max-width: 50%;
+		margin: 0 0 20px 0;
+		color: #fff;
+		@media (max-width: 810px) {
+			max-width: 65%;
+		}
+		@media (max-width: 620px) {
+			max-width: 100%;
+			text-align: center;
+		}
+		@media (max-width: 440px) {
+			font-size: 30px;
+		}
+	}
+	/* .hero__descr */
+	&__descr {
+		font-size: 16px;
+		line-height: 140%;
+		max-width: calc(50% - 100px);
+		margin: 0 0 40px 0;
+		color: #fff;
+		@media (max-width: 810px) {
+			max-width: calc(65% - 100px);
+		}
+		@media (max-width: 620px) {
+			max-width: 100%;
+			text-align: center;
+		}
+	}
+	/* .hero__btn */
+	&__btn {
+		background-color: $carnation-btn;
+		@media (min-width: $md2+px) {// hhv snipet
+			&:hover {
+				background-color: $carnation-hover-btn;
+			}
+			&:active {
+				background-color: $carnation-active-btn;
+			}
+		}
+	}
+}

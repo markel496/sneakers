@@ -1,0 +1,157 @@
+.instagram {
+	margin: 0 0 60px 0;
+	@media (max-width: $md3+px) {
+		margin: 0 0 30px 0;
+	}
+	/* .instagram__container */
+	&__container {
+		display: flex;
+		align-items: flex-end;
+		@media (max-width: $md2+px) {
+			display: block;
+		}
+	}
+	/* .instagram__left */
+	&__left {
+		margin: 0 60px 0 0;
+		@media (max-width: $md1+px) {
+			margin: 0 30px 0 0;
+		}
+		@media (max-width: $md2+px) {
+			margin: 0 -15px;
+		}
+	}
+	/* .instagram__form */
+	&__form {
+	}
+	/* .instagram__right */
+	&__right {
+	}
+}
+
+.form-questions {
+	width: 380px;
+	padding: 40px 20px;
+	background-color: #484283;
+	border-radius: 4px;
+	@media (max-width: 1024px) {
+		width: 300px;
+	}
+	@media (max-width: $md2+px) {
+		width: 100%;
+		border-radius: 0;
+		padding: 60px 15px;
+		margin: 0 0 40px 0;
+	}
+	@media (max-width: $md3+px) {
+		margin: 0 0 30px 0;
+	}
+	/* .form-questions__title */
+	&__title {
+		text-align: center;
+		line-height: 30px;
+		color: #fff;
+		margin: 0 0 20px 0;
+		@media (max-width: $md2+px) {
+			text-align: left;
+		}
+	}
+	/* .form-questions__descr */
+	&__descr {
+		color: #fff;
+		line-height: 16px;
+		text-align: center;
+		margin: 0 0 40px 0;
+		@media (max-width: $md2+px) {
+			text-align: left;
+			margin: 0 0 30px 0;
+		}
+	}
+	/* .form-questions__input */
+	&__input {
+		width: 100%;
+		height: 60px;
+		padding: 0 20px;
+		display: flex;
+		align-items: center;
+		margin: 0 0 10px 0;
+		color: #444b58;
+		font-family: $fontfamily;
+		font-size: 16px;
+		border-radius: 4px;
+		&::placeholder {
+			color: #b2b5bb;
+			font-size: 16px;
+			font-family: $fontfamily;
+			font-style: normal;
+			font-size: 16px;
+		}
+		@media (max-width: $md2+px) {
+			max-width: 500px;
+		}
+	}
+	/* .form-questions__btn */
+	&__btn {
+		width: 100%;
+		padding: 22px 0px;
+		background-color: #f14f4f;
+		@media (min-width: $md2+px) {// hhv snipet
+			&:hover {
+				background-color: #cc4949;
+			}
+		}
+		@media (max-width: $md2+px) {
+			width: auto;
+			padding: 22px 47px;
+		}
+	}
+}
+
+.right-instagram {
+	/* .right-instagram__title */
+	&__title {
+		display: flex;
+		justify-content: center;
+		margin: 0 0 20px 0;
+		img {
+			width: 157px;
+			height: 56px;
+		}
+	}
+	/* .right-instagram__logo */
+	&__logo {
+	}
+	/* .right-instagram__swiper */
+	&__swiper {
+	}
+	/* .right-instagram__container */
+	&__container {
+		display: grid;
+		grid-template-columns: repeat(4,1fr);
+		grid-template-rows: repeat(2, 161px);
+		gap: 15px;
+		@media (max-width: $md3+px) {
+			display: flex;
+			gap: 0;
+		}
+	}
+	/* .right-instagram__item */
+	&__item {
+		display: block;
+		border-radius: 4px;
+		&:nth-child(2) {
+			grid-column: 2 span;
+			grid-row: 2 span;
+		}
+		img {
+			object-fit: cover;
+			border-radius: 4px;
+		}
+		@media (max-width: $md3+px) {
+			height: 100%;
+		}
+	}
+	.swiper-autoheight, .swiper-autoheight .swiper-slide {
+     	height: 100%; 
+}
+}

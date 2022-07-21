@@ -1,0 +1,205 @@
+.contacts {
+	margin: 0 0 60px 0;
+	padding: 60px 0;
+	background-color: #f3f7f6;
+	@media (max-width: $md3+px) {
+		margin: 0 0 30px 0;
+		padding: 30px 0;
+	}
+	/* .contacts__container */
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		@media (max-width: $md2+px) {
+			flex-direction: column;
+		}
+	}
+	/* .contacts__text */
+	&__text {
+		flex: 1 1 auto;
+		padding: 0 20px 0 0;
+		@media (max-width: $md2+px) {
+			padding: 0;
+		}
+	}
+	/* .contacts__title */
+	&__title {
+		margin: 0 0 60px 0;
+		@media (max-width: $md2+px) {
+			margin: 0 0 30px 0;
+		}
+
+	}
+	/* .contacts__addresses */
+	&__addresses {
+		margin: 0 0 40px 0;
+		@media (max-width: $md2+px) and (min-width: $md3+px) {
+			margin: 0 0 20px 0;
+			display: flex;
+		}
+		@media (max-width: $md3+px) {
+			margin: 0 0 30px 0;
+		}
+	}
+	/* .contacts__item */
+	&__item {
+		font-style: normal;
+		&:not(:last-child) {
+			margin: 0 0 40px 0;
+			@media (max-width: $md2+px) {
+				margin: 0 80px 0 0;
+			}
+			@media (max-width: $md3+px) {
+				margin: 0 0 30px 0;
+			}
+		}
+	}
+	/* .contacts__office */
+	&__office {
+		display: flex;
+		align-items: center;
+		margin: 0 0 40px 0;
+		@media (max-width: $md2+px) {
+			margin: 0 0 15px 0;
+		}
+		@media (max-width: $md2+px) {
+			margin: 0 0 10px 0;
+		}
+	}
+	/* .contacts__subtitle */
+	&__subtitle {
+		display: flex;//чтобы выровнять по вертикали, т.к. применил тут height
+		align-items: center;
+		font-size: 14px;
+		height: 20px;
+		color: #b2b5bb;
+		letter-spacing: 0.08em;
+		text-transform: uppercase;
+		margin: 0 0 20px 0;
+		@media (max-width: $md2+px) {
+			margin: 0 0 15px 0;
+		}
+		@media (max-width: $md2+px) {
+			margin: 0 0 10px 0;
+		}
+	}
+	/* .contacts__tooltip */
+	&__tooltip {
+	}
+	/* .contacts__phone */
+	&__phone {
+		display: inline-block;
+		font-family: Intro;
+		font-size: 30px;
+		line-height: 140%;
+		color: #444b58;
+		margin: 0 0 9px 0;
+		@media (max-width: $md3+px) {
+			line-height: normal;
+			margin: 0 0 5px 0;
+		}
+	}
+	/* .contacts__address */
+	&__address {
+		display: block;
+		@media (max-width: 360px) {
+			font-size: 14px;
+		}
+	}
+	/* .contacts__links */
+	&__links {
+		display: flex;
+		@media (max-width: $md2+px) {
+			margin: 0 0 30px 0;
+		}
+	}
+	/* .contacts__link */
+	&__link {
+		width: 44px;
+		height: 44px;
+		&:not(:last-child) {
+			margin: 0 20px 0 0;	
+		}
+		svg {
+			width: 100%;
+			height: 100%;
+		}
+	}
+	/* .contacts__map */
+	&__map {
+		width: 57.628%;//680px - по макету
+		min-width: 600px;
+		height: 500px;
+		@media (max-width: $md2+px) {
+			width: 100%;
+			min-width: 0;
+		}
+	}
+}
+
+.tooltip {
+	position: relative;
+	/* .tooltip__icon */
+	&__icon {
+		width: 20px;
+		height: 20px;
+		border-radius: 50%;
+		background-color: #fff;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		cursor: pointer;
+		box-shadow: 2px 4px 10px rgba(0, 13, 84, 0.2);
+		svg {
+			width: 6px;
+			height: 10px;
+		}
+		// &:hover + .tooltip__text {
+		// 	visibility: visible;
+		// 	opacity: 1;
+		// 	transform: translateY(0);
+		// }
+	}
+	/* .tooltip__text */
+	&__text {
+		visibility: hidden;
+		opacity: 0;
+		z-index: 5;
+		transform: translateY(-50%);
+		position: absolute;
+		left: -11px;
+		bottom: calc(100% + 14px);
+		padding: 10px 20px;
+		width: 426px;
+		background-color: #fff;
+		border-radius: 10px;
+		box-shadow: 4px 8px 20px rgba(0, 13, 84, 0.2);
+		font-size: 14px;
+		line-height: 140%;
+		will-change: transform;
+		transition: .3s ease-out;
+		&::after {
+			content: "";
+			position: absolute;
+			bottom: -8px;
+    		left: 13px;
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 8px 8px 0 8px;
+			border-color: #fff transparent transparent transparent;
+		}
+		@media (max-width: 600px) {
+			width: 160px;
+			padding: 10px;
+		}
+	}
+	&._tooltip-open {
+		.tooltip__text {
+			visibility: visible;
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
+}

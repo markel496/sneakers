@@ -1,0 +1,66 @@
+.team {
+	padding: 60px 0;
+	background: #484283 url("../img/team-bg.svg") top right no-repeat;
+	margin: 0 0 60px 0;
+	@media (max-width: $md3+px) {
+		margin: 0 0 30px 0;
+	}
+	/* .team__container */
+	&__container {
+	}
+	/* .team__title */
+	&__title {
+		@extend %subtitle; 
+    	color: #fff;
+    	margin: 0 0 40px;
+    	@media (max-width: $md4+px) {
+    		margin: 0 0 25px;
+    	}
+	}
+	/* .team__list */
+	&__list {
+		display: grid;
+    	grid-template-columns: repeat(12, 1fr);
+    	gap: 40px 20px;
+    	@media (max-width: $md4+px) {
+    		display: block;	
+    	}
+	}
+	/* .team__item */
+	&__item {
+		grid-column: 4 span;
+		@media (max-width: $md3+px) {
+			grid-column: 6 span;
+		}
+		@media (max-width: $md4+px) {
+			&:not(:last-child) {
+				margin: 0 0 30px 0;			
+			}
+		}
+	}
+	/* .team__img */
+	&__img {
+		height: auto;
+		overflow: hidden;
+		margin: 0 0 20px 0;
+		border-radius: 4px;
+	}
+	/* .team__subtitle */
+	&__subtitle {
+		display: block;
+		font-family: Intro;
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 24px;
+		color: #fff;
+		margin: 0 0 20px 0;
+		@media (max-width: $md2+px) {
+			margin: 0 0 10px 0;
+		}
+	}
+	/* .team__post */
+	&__post {
+		line-height: 16px;
+		color: #fff;
+	}
+}
